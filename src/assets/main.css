@@ -1,0 +1,105 @@
+@import "base.css";
+
+* {
+    border-radius: 8px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition:
+            color 0.5s,
+            background-color 0.5s;
+    line-height: 1.6;
+    font-family:
+            Inter,
+            -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            'Fira Sans',
+            'Droid Sans',
+            'Helvetica Neue',
+            sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+.top-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*background: rgb(226,226,226);
+    background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(36,36,36,1) 87%, rgba(0,0,0,1) 100%);*/
+}
+
+.logo,
+.time,
+.weather {
+    display: grid;
+    justify-content: center;
+    border: 2px solid darkgray;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.photo,
+.greeting {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkgray;
+    height: 60vh;
+    /*background: rgba(2,0,36, 30%);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.car,
+.family,
+.house,
+.business {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkgray;
+    height: 20vh;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: start;
+    align-items: center;
+    border: 2px solid darkgray;
+}
+/*.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.menu section {
+    display: grid;
+    justify-content: center;
+    border: 2px solid darkgray;
+}*/
